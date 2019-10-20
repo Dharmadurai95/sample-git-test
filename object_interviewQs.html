@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            object to age an employee 
+        </title>
+    </head>
+    <body>
+        ENTER YOUR AGE:<input type="text" id="d"><br>
+        <button type="button" onclick="emage()">summit</button>
+        <p id ="age"></p>
+    </body>
+    <script>
+         var obj = {
+             firstName:"dharma",
+             lastName:"durai",
+             age:24,
+             qualification:"dme",
+            /* obj.language="tamilanda";
+         document.getElementById("age").innerHTML=obj.language+" "+obj.fullName();*/
+                 get :function() {
+                     return this.lang=language;
+                 },
+                 set : function(value) {
+                     this.lang=language.value;
+                 }
+         }
+         obj.fullName=function(){
+                 return this.firstName+""+this.lastName;};
+        
+    </script>
+</html>

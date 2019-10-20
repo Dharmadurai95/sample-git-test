@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>>
+    <head>
+        <title>picture</title>
+        <style>
+            img{width:300px;
+            height:auto;}
+            div{position:relative;
+            width: 300px;
+            height:auto;
+            }
+            section{
+                position: absolute;
+                opacity: 0;
+                width:300px;
+                height: auto;
+                transition: 5s;
+            } 
+            div:hover  section{opacity: 1;}
+            p{color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%  ;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+             }
+        </style>
+    </head>
+    <body>
+       <div class="a"> 
+            <img src="Koala.jpg">KOALA IMAGES</img>
+           <section>
+          <p>hello world</p>
+           </section>
+       </div>
+
+    </body>
+</html>

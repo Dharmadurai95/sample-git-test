@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            windows object 
+        </title>
+    </head>
+    <body>
+        <h1 id="nav"></h1>
+        <p id = "demo"></p>
+        <p id = "sdemo"></p>
+        <p id = "thdemo"></p>
+        <button onclick="back()"  value="back">back page</button>        
+        <button onclick="foward()">foward page</button>
+    </body>
+    <script>
+        document.getElementById("nav").innerHTML=+""+window.navigator.appName+
+        "<br>app version name"+navigator.appVersion+
+        "<br>app code name"+navigator.appCodeName+"<br> user agend"+navigator.userAgent+
+        "<br> product engine"+navigator.product+"<br>plat form poperty os"+navigator.platform+
+        "<br>language//"+navigator.language+"<br> browser is online"+navigator.onLine;
+       /* var a =window.innerWidth;
+        var b =window.innerHeight;
+        var c = window.open();
+        document.getElementById("demo").innerHTML=a+"<br>"+b;
+        document.getElementById("sdemo").innerHTML="screen object::"+"height "+screen.height+
+        "<br> width"+screen.width+"<br> avil height"+screen.availHeight+"<br>avail depth"
+        +screen.availWidth+"<br> color depth:"+screen.colorDepth+"<br>pixel depth"
+        +screen.pixelDepth;
+        document.getElementById("thdemo").innerHTML=+"file href"+location.href+"<br>path name"+
+        location.pathname+"<br>hostname"+location.hostname+"<br>protocal::::"+
+        location.protocol+"<br>domaoin name"+location.assign;
+        function back() {
+            window.history.back;
+        }
+        function back() {
+            window.history.forward;
+        }*/
+    </script>
+</html>

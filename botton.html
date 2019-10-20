@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>styles button</title>
+      <style>
+           button{
+               width: 100px;
+               height:75px;
+               vertical-align:middle;
+               position:relative;
+               transition: all 0.5s;
+           }
+           span:after{
+               content:'\00bb';
+               font-size:39px;
+               position:absolute;
+               right: 20px;
+               opacity: 0;
+               top:10px;
+               display:inline-block;
+               transition: 0.5s
+
+           }
+           button:hover ,span{
+                width:250px;
+               
+           }
+           button:hover  span:after{opacity: 1;}
+
+
+      </style>
+    </head>
+    <body>
+        <div>
+            <button><span>button</span></button>
+        </div>
+    </body>
+</html>

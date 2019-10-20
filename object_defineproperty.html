@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            object define property
+
+        </title>
+    </head>
+    <body>
+        <h1 id="dd"></h1>
+    </body>
+    <script>
+        var person = {
+          name:"raj",
+          age: 23,
+          phonenumber:"no"
+        };
+        /*Object.defineProperties(person,"phonenumber",{
+            value: "9894982704",
+            writable : true,
+            enumerable : true,
+            configurable : true
+        });*/
+        Object.defineProperties(person,"phonenumber",{
+            get  ph() {
+                return this.phonenumber;  
+            },
+            set ph(value){
+              phonenumber=value.toUpperCase()
+            }
+        })
+        person.phonenumber="hai ever one";
+        document.getElementById("dd").innerHTML=person.phonenumber;
+
+        var c = ["hai","hello","how are you"];
+        var num = [1,33,75,954,09];
+        var final = num.find(funct);
+        function funct(value,index,array){return value > 5 };
+        document.getElementById("dd").innerHTML = MIN_SAFER_INTEGER;
+
+    </script>
+</html>

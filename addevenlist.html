@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            addevenlistner
+        </title>
+    </head>
+    <body>
+        <button id="btn" ="">button</button>
+    </body>
+    <script>
+        document.getElementById("btn").addEventListener("click",fun)
+        document.getElementById("btn").addEventListener("mouseover",fnn)
+        document.getElementById("btn").addEventListener("mouseout",f)
+        document.getElementById("btn").addEventListener("onresize",fin)
+        function fun() {
+            window.alert("hello world");
+        }
+        function fnn() {
+            window.alert("THIS EVEN IS MOUSEOVERa");
+        }
+        function f() {
+            window.alert("THIS EVEN IS MOUSE OUT");
+        }
+        function fin() {
+            window.alert("PAGE RELOAD");
+        }
+
+    </script>
+</html>

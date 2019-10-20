@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            years and experince
+        </title>
+    </head>
+    <body>
+        <input type="text" id="text" value="experence">
+        <input type="checkbox" id="check" onclick="show()">
+        <select id="sl">
+            <option>years</option>
+        </select>
+        
+        <script>
+           c.style.display="none"; 
+            function show()
+            {
+                a=document.getElementById("text");
+                b=document.getElementById("check");
+                c=document.getElementById("sl");
+                
+                if(b.checked==true)
+                {
+                    c.style.display="inline";
+                    c.fontSize="300px"
+                }
+                else{
+                    c.style.display="none";
+                }
+            }
+        </script>
+    </body>
+</html>

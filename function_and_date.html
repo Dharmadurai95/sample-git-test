@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            stringify function
+            stringify date
+        </title>
+    </head>
+    <body>
+        <h2 id="date"></h2>
+        <h2 id="fun"></h2>
+    </body>
+    <script>
+        var fun = {name:"dd",age:function() {return 30}};
+        fun.age = fun.age.toString()
+        var stdate = JSON.stringify(fun);
+        document.getElementById("fun").innerHTML=stdate;
+        var date = {name:"dharma",today:new Date};
+        var stdate = JSON.stringify(date);
+        document.getElementById("date").innerHTML=stdate;
+
+    </script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>event this</title>
+    </head>
+    <body>
+      <button type="button" onclick="fun()" id="od">button</button>
+      <p id="i"></p>
+    </body>
+    <script>
+        var a=["hai","hello"];
+        document.getElementById("i").innerHTML=a;
+        function fun(){
+            a[a.length]="haiii";
+            document.getElementById("i").innerHTML=a;
+        }
+
+
+    </script>
+</html>

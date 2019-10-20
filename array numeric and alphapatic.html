@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array numeric and alpahapatic</title>
+    </head>
+    <body>
+        <p id="first"> the given input</p>
+        <button type="button" onclick="fun()">click me</button>
+    </body>    
+        <script>
+            var a=[11,4,77,5,44,87,05,14];
+            document.getElementById("first").innerHTML=a;
+            function fun()
+            {
+                a.sort(function(a,b){return 0.5-math.random()});  // {return b-a});
+                document.getElementById("first").innerHTML=a;
+            }
+        </script>

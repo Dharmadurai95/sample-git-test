@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+             function constructors
+        </title>
+    </head>
+     <body>
+         <h1 id.="fn"></h1>
+         <h1 id="fi"></h1>
+     </body>
+      <script>
+        var x =funMax(32,852,987,1234,879);
+        function funMax() {
+        var i ,max;
+        max = -Infinity;
+        for(i = 0; i<arguments.length; i++) {
+            if(arguments[i]>max) {
+                max =arguments[i]
+            };
+         };
+         return max;
+        };
+        document.getElementById("fi").innerHTML=x;
+      </script>
+</html>

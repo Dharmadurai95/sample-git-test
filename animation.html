@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>animation</title>
+      <style>
+        p{ background-color: black; 
+        width:300px;
+        height:300px;
+        position:relative;
+        animation: dharma ;
+        animation-iteration-count:infinite;
+        animation-duration:5s;
+        animation-delay:2s;
+        animation-direction:reverse;
+
+        }
+        @keyframes dharma{
+            0%{background-color:yellow; left: 5px; top :0px;  }
+            20%{background-color:green; left:300px; top:0px;}
+            40%{background-color:red;left:300px; top:400px;}
+            60%{background-color:blue}
+            80%{background-color:rgb(19, 155, 189)}
+            100%{background-color:rgba(27, 85, 35, 0.151)}
+        }
+        
+    
+      </style>
+    </head>
+    <body>
+      <p></p>
+       <div> <h1>ANIMATION 1</h1>
+        <h1>ANIMATION 2</h1>
+        <h1>ANIMATION 3</h1>
+        <h1>ANIMATION 4</h1></div>
+    </body>
+</html>

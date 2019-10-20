@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            call and apply
+        </title>
+    </head>
+     <body>
+         <h1 id ="clAp"></h1>
+     </body>
+       <script>
+         var roomSenior = {
+             firstmem: function() {
+                 return  this.marriedman+""+this.senior;
+             }
+          }         
+         var marriedguys = {
+              marriedman:"ramakrishnan",
+              senior:"john"
+          }
+        var senior = {
+            marriedman:"vicky",
+            senior:"sathis"
+        }
+        var res = roomSenior.firstmem.call(senior);
+        document.getElementById("clAp").innerHTML=res;
+       </script>
+</html>

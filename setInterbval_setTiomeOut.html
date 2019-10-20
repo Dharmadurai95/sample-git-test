@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            set interval and set time out 
+        </title>
+    </head>
+    <body>
+        <button onclick="var st=setTimeout(settim,100);"> settineout</button>
+        <button onclick="clearTimeout(st)">clear button</button><br>
+        <button onclick="var stin= setInterval(setiner,1000)">set interval</button>
+        <button onclick="clearInterval(stin)">clear interval</button>
+        <h1 id="shBx"></h1>
+        
+    </body>
+    <script>
+      
+        function settim() {
+            var d = new Date();
+            document.getElementById("shBx").innerHTML=d;
+
+        }
+        function setiner() {
+           var  d= new Date();
+           document.getElementById("shBx").innerHTML=d.toLocaleTimeString();
+
+        }
+    </script>
+</html>

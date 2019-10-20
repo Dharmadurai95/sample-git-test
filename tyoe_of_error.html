@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>type of error</title>
+    </head>
+    <body>
+        <h1 id="a"></h1>
+        <input type="text" id="tx1" >
+        <input type="button" id="btn" onclick="err()" value="check the value">
+    </body>
+    <script>
+        function err(){
+            var messege,text;
+          Message=document.getElementById("a");
+          messege.innerHTML="";
+          text=document.getElementById("tx1").value;
+           try{
+               if(text=="") throw "empty";
+               if(isNaN(text)) throw "not a number";
+               x=Number(x)
+               if(text<5) throw "to low value";
+               if(text>10) throw "to high value";
+           }
+           catch(er){
+               messege.innerHTML="your input is"+er;
+           }
+        }
+    </script>
+</html>

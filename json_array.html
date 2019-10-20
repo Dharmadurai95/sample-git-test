@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            jason array concept
+        </title>
+    </head>
+    <body>
+        <h1 id="demo"></h1>
+    </body>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange= function () {
+            if(this.readyState==4&&status==200) {
+                var myarr = JSON.parse(this.responseText);
+                document.getElementById("demo").innerHTML = myarr[1];
+            }
+        };
+        xmlhttp.open("GET","json_demo.txt",true);
+        xmlhttp.send();jason
+    </script>
+</html>

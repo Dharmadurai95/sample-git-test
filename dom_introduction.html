@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            dom how to find the element 
+        </title>
+    </head>
+    <body>
+        <p class="dd">hello world</p>
+        <p class="dd">hello dharmadurai</p>
+        <p class="dd" style="background: red">hello ramakrishnan</p>
+        <h1 id ="demo"></h1>
+    </body>
+    <script>
+    var x =document.getElementsByClassName("dd");
+    document.getElementById("demo").innerHTML="this is the paragraph\
+     selected method"+"<br>"+x[2].innerHTML;
+     document.getElementById("dd").style="background:blue";
+    </script>
+</html>

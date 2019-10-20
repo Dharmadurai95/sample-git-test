@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            poppup alerts
+        </title>
+    </head>
+    <h1>alert! conir box and alert box</h1>
+    <body>
+            <button onclick="Alert()">alert box</button>
+            <button onclick="confir()">confirm box</button>
+            <button onclick="propm()">propmt box</button>
+            <p id="shbx"></p>
+    </body>
+    <script>
+      function Alert() {
+          alert("hello dharmadurai you are not authorisation !!");
+      };
+      function confir() {
+          var txt ;
+        if(confirm("enter your password")){
+            txt = "your trsansaction is progessed";
+        }
+        else {
+            txt="you canceled!"
+        }document.getElementById("shbx").innerHTML=txt;
+      }
+      function propm() {
+          var txt;
+          var pr = prompt("hello","dharmadurai");
+          if(pr==null||pr=="") {
+              txt="not allowed";
+          }
+          else {
+            txt="hai "+pr+" " +"how was the day";
+          }
+          document.getElementById("shbx").innerHTML=txt;
+      }
+    
+    </script>
+</html>

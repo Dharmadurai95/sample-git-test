@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>for each</title>
+    </head>
+    <body>
+        <p>call a function every for each  array</p>
+        <h1 id="h"></h1>
+    </body>
+    <script>
+        var a=[33,52,664,854,75];
+        var s="";
+        a.forEach(myfun);
+        
+          document.getElementById("h").innerHTML=s;
+          function myfun(value){
+          s=s+value +"<br>" ; }
+    
+    </script>
+</html>

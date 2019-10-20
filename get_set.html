@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            get and set object
+        </title>
+    </head>
+     <body>
+         <h1 id="get"></h1>
+     </body>
+      <script>
+         var car = {
+             model:"ferrari",
+             price:"1500000",
+             ownerName:"",
+             color:"red",
+            set onw(own) {
+                this.ownerName = own.toUpperCase();
+            }
+         };
+         car.ownerName="ddddddd";
+         document.getElementById("get").innerHTML=car.own;
+      </script>
+</html>

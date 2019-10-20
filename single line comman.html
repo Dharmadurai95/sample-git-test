@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>single line command</title>
+    </head>
+    <body>
+    <h1 id="a">command here</h1>
+    <input type="text" id="txt">
+    <input type="checkbox" id="c" onclick="showcmd()">
+    </body>
+    <script>
+        function showcmd(){
+        p=document.getElementById("a");
+        c=document.getElementById("txt");
+        D=document.getElementById("c");
+       /* p.innerHTML=c.value;
+        c.value=" ";
+        c.focus();
+        }*/
+        if(D.checked==true)
+        {
+            D.value=p.value;
+        }
+
+    </script>
+</html>

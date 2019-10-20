@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            address
+        </title>
+    </head>
+    <body>
+        <textarea  rows="10" cols="15" id="row" placeholder="tempadd"></textarea>
+        <input type="checkbox" id="but" onclick="copyadd()"></input>
+        <textarea  rows="10" cols="15" id="col" placeholder="peradd"></textarea>
+    </body>
+    <script>
+        function copyadd()
+        {
+            a=document.getElementById("row");
+            b=document.getElementById("but");
+            c=document.getElementById("col");
+            if(b.checked==true){
+                c.value=a.value;
+                c.disable=true;
+            }
+            else{
+                c.value="";
+                c.disable=false;
+            }
+        }
+    </script>
+</html>

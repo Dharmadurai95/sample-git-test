@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            json object
+        </title>
+    </head>
+    <body>
+        <h1 id= "ob"></h1>
+    </body>
+    <script>
+        var object = {
+            "name":"top models",
+            "range":"high rage",
+            "cars": {
+                "car1":"ferrari",
+                "car2":"lambogini"
+            }
+        };
+        var object1 = {
+            "name":"top models",
+            "range":"high rage",
+            "cars":["ferrari",
+                "lambogini"] 
+            }
+        var i ="";
+        for(let x in object.cars) {
+            i +=object.cars[x]
+        }
+        document.getElementById("ob").innerHTML=i;
+    </script>
+</html>

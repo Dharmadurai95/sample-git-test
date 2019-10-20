@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            onchange 
+        </title>
+    </head>
+    <body>
+    <div style="height: 130px;width:200px; border:1px solid black"
+     onmousedown="doun(this)" onmouseup="up(this)">hello</div>
+    </body>
+    <script>
+
+        function fun() {
+            var s = document.getElementById("d");
+            s.value=s.value.toUpperCase();
+
+        }
+        function over(ov) {
+            ov.innerHTML="hello";
+        }
+        function out(ov) {
+            ov.innerHTML="world";
+        }
+        function doun(o) {
+            o.innerHTML="hello";
+            o.style.background="red";
+        }
+        function up(o) {
+            o.innerHTML="hello";
+            o.style.background="yellow";
+        }
+    </script> 
+</html>

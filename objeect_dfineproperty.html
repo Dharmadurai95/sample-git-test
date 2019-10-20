@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            object.defineproperty
+        </title>
+    </head>
+    <body>
+        <h1 id.="obj"></h1>
+    </body>
+    <script>
+        var object={counter:0};
+        Object.defineProperty(object,"reset", {
+            get:function() { return this.counter=0}
+        });
+        Object.defineProperty(object,"increment", {get:function(){ return this.counte+=1}});
+        Object.defineProperty(object,"add",{ set : function(value){ this.counter+=value}
+        });
+        Object.defineProperty(object,"subract",{ set : function(value){ this.counter-=value}
+        });
+        object.reset; 
+        object.add = 5; 
+        object.subract = 1;
+        object.increment;
+        
+        document.getElementById("obj").innerHTML=object.counter;
+                                  
+    </script>
+</html>

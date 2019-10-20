@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>text area</title>
+    </head>
+    <body>
+        <textarea rows="20" cols="30" id="txt" onkeyup="myfunction()"></textarea><span id="sp"></span>
+    </body>
+    <script>
+     function myfunction(){
+        var t=document.getElementById("txt");
+        var vl=t.value.length;
+       var count=100;
+        count=count-vl;
+        s=document.getElementById("sp");
+        s.innerHTML=count+"% charecter remainning";
+        t.setAttribute("Max length"100 );
+     }
+    </script>
+</html>

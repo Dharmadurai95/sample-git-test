@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            java script objet notetion
+        </title>
+    </head>
+    <body>
+    <p id ="pr"></p>
+    </body>
+    <script>
+       /* var txt = '{"name":"dharmadurai", "age":25, "qualification":"diploma in mechanical engineering"}'
+        var obj = JSON.parse(txt);
+        document.getElementById("pr").innerHTML=obj.name+" " +obj.qualification;*/
+        var txt ='{"person":['+'{"name":"dharmadurai"},'+
+                  '{"age":25},'+
+                  '{"qualification":"dme"}]}';
+        var obj = JSON.parse(txt);
+        document.getElementById("pr").innerHTML=obj.person[0].name;
+    
+    </script>
+</html>

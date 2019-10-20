@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            slid show
+        </title>
+        <style>
+            img{
+                width:200;
+                height:300px;
+            }
+        </style>
+    </head>
+    <body>
+       
+        
+        <input type="button"id="a" value="<<">
+        <img src="workplace.jpg" id="pic">
+        <input type="button" value=">>" onclick="slidshow()">
+<script>
+     i=o;
+     setInterval(slidshow,1000)
+     function slidshow(){
+         p=document.getElementById("pic");
+         n=new array("koala.jpg","img_girl.jpg","jellyfish.jpg","lighthouse.jpg");
+         p.src=n[i];
+         i++;
+         if(i==n.length)
+         {
+             i==0;
+         }
+
+     }
+</script>
+    </body>
+</html>

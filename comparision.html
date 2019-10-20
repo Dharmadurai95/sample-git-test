@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            comparision
+        </title>
+    </head>
+    <body>
+            <input type="text" id="d" value="18"></input>
+            <button type="button" onclick="validage()">check the result</button>
+            <h1 id="p"></h1>
+    </body>
+    <script>
+        function validage(){
+            var age,voteage;
+            age=document.getElementById("d").value;
+             voteage=(age<18)?"your to young":"your allowed to vote";
+             document.getElementById("p").innerHTML=voteage;
+            
+        }
+    </script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            js object creation
+        </title>
+    </head>
+      <body>
+            <h1 id="cr"></h1>
+   
+       <script>
+         var person = {
+             fullname:function() {
+                 return this.fname+"<br>"+this.lname;
+             }
+         }
+         var person1 = {
+             fname:"dharmadurai",
+             lname:"duraidharma"
+         }
+         var person2 = {
+             fname:"logu",
+             lname:"lohi"
+         }
+         var fres = person.fullname.call(person1);
+         document.getElementById("cr").innerHTML=fres;
+       </script>
+      </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTPE html>
+<html>
+    <head>
+        <title>random  floor mehtod</title>
+    </head>
+    <body>
+        <button type="button" onclick="document.getElementById('id').innerHTML=random(1,33,75,85,99,12,100)">
+        button</button>
+        <p id="id"></p>
+
+    </body>
+    <script>
+        function random(min,max){
+            return Math.floor(Math.random()* (max-min)) + min;
+
+        }
+       
+    </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            dom collections => length finds
+        </title>
+    </head>
+    <body>
+        <p>hello ram</p>
+        <p>hello dharma</p>
+        <p>hell everyone</p>
+        <p id ="id"></p>
+        <button onclick="prafun()">click to chane the text color</button>
+    </body>
+    <script>
+       function prafun() {
+           var x=document.getElementsByTagName("p");
+         
+           var i;
+           for(i=0;i<x.length;i++) {
+               x[i].style.color="red";
+           }
+       }
+    </script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            nested function 
+        </title>
+    </head>
+     <body>
+         <button onclick="secfun()">button</button>
+         <p id="opt"></p>
+     </body>
+     <script>
+        
+     var x=( function first() {
+        var count =0;
+        return function secfun() { count++; return count;}
+       })();
+      function secfun() {
+        document.getElementById("opt").innerHTML=x();
+      }
+      
+     </script>
+</html>

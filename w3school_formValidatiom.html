@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 
+            form valitation 
+            <style>
+                input{
+                    width:500px;
+                    height:70px;
+                    background:rebeccapurple;
+                }
+            </style>
+        </title>
+    </head>
+    <body>
+   <form action="get_and_set.html" name="ff" onclick="myformvalid()">
+        name:<input type="text" name="fname" required><br>
+        phone number:<input type="text" name="numb" required><br>
+        <button type="button"> submit button</button>
+    </form>
+    <p id="show">
+        plz enter the 1 to 10 value
+    </p>
+    enter the numbers:<input type="text" id="txt">
+    <button type="button" id="btn" onclick="numberCheck()">check the result</button><br>
+    <input type="number" id="nm" min="10" max="25" required><br>
+    <input type="button" id="btn" onclick="fun()">
+    </body>
+    <script>
+        function fun() {
+            inp=document.getElementById("nm");
+            if(!inp.checkValidity()){
+                document.getElementById("show").innerHTML=validationMessage;
+            }
+            else {
+                document.getElementById("show").innerHTML="input ok" ;
+            }
+        }
+
+     /*   var numbx , text;
+      function numberCheck() {
+        numbx=document.getElementById("txt").Value;
+        if(numbx==isNaN||numbx>10||numbx<1) {
+            text = "yout input is wrong";
+        }
+        else{
+            text ="your input ok";
+        }
+        document.getElementById("show").innerHTML=text;
+      }
+  
+         
+      /* function myformvalid(){
+        nam=document.forms["ff"]["fname"].value;
+        ph=document.forms["ff"]["numb"].value;
+        if(nam=="") {
+            alert("plz.. enter your name");
+            return false;
+        }
+        else if(ph==isNaN) {
+            alert("plz enter the number");
+            return false;
+        }
+        else{
+
+        }
+      }*/
+    </script>
+</html>

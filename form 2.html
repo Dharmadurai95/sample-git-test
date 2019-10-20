@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form 2</title>
+        <style>
+           *{box-sizing:border-box;}
+           [type="text"],select{
+               width:100%;
+               border-radius:4px;
+               resize: vertical;
+               margin:5px 2px 5px 2px;
+
+           }
+           section{
+               border: 0px rgb(165, 143, 143);
+               border-radius:4px;
+               background: rgb(184, 181, 181);
+               
+           }
+           [type="submit"]{
+               float:right;
+               background:indigo;
+               border-radius:4px;
+               padding:10px;
+               margin-bottom:0% 0% 0% 90%;
+               
+               width:75%;
+               
+           }
+           label{
+               display:inline-block;
+           }
+           .col1{
+               float:left;
+               margin-top:5px;
+               width:25%;
+               
+
+           }
+          .col2{
+              float:left;
+              width:75%;
+              margin-top:5px;}
+          .row:after{
+            content:"";
+            clear:both;
+            display:table;
+          }
+          
+
+
+          
+        </style>
+    </head>
+    <body>
+     <section>
+       <div class="row">
+            <div class="col1">
+                    <label>ENTER YOUR FIRST NAME</label>
+            </div>
+            <div class="col2">
+                    <input type="text" name="dharmadurai" palcehoklder="enter your name">
+            </div>
+       </div>
+       <div class="row">
+            <div class="col1">
+            <label>ENTER YOUR LAST NAME</label>
+            </div>
+            <div class="col2">
+            <input type="text" name="dharmadurai" palcehoklder="enter your name">
+            <div class="col2">
+       </div>
+       <div class="row">
+            <div class="col1">
+            <label>SELECT YOUR COUNTRY</label>
+            </div> 
+            <div class="col2">  
+            <select id="country" name="country">
+               <option>india</option>
+               <option>usa</option>
+               <option>canada</option></select>
+            <div class="col2">
+        </div>
+         <div class="row">
+           
+           <div class="col1">
+           <label>SOMETHING TEXT HERE</label>
+           </div>
+           <div class="col2">
+           <input type="text" name="some thing write here" value="some thing write here" style =height:350px;>
+           <input type="submit" name="submit">
+           </div>
+        </div>
+    </section>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            apppend chiild
+        </title>
+    </head>
+    <body>
+        <marquee>hai</marquee>
+        <input type="button" value="button" onclick="app()"></input>
+    </body>
+    <script>
+        function app(){
+        h=document.getElementById("marquee");
+        e=document.createTextNode("welcome");
+        h.appendChild(e);
+        document.body.appendChild(h);
+    }
+    </script>
+</html>

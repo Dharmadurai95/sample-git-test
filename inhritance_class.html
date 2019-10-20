@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>inheritance class</title>
+    </head>
+    <body>
+            <h1 id="inh"></h1>
+    </body>
+    <script>
+        class bike
+        {
+            constructor(model)
+            {
+                this.name=model;
+            }
+           static display()
+            {
+                return "bike name "+this.name;
+            }
+        }
+        class car extends bike
+        {
+            constructor(model,cmodel)
+            {
+                super(model);
+                this.carname=cmodel;
+            }
+            show()
+            {
+                return  car.display()+' hai '+this.carname;
+            }
+        }
+        obj=new car("pulsar","ferrari");
+        document.getElementById("inh").innerHTML=obj.show();
+    </script>
+</html>

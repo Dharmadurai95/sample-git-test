@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex property</title>
+    </head>
+    <style>
+        .a{display: flex;
+          /* flex-direction:row-reverse;
+         flex-wrap:wrap-reverse;*/
+
+          justify-content:space-around;
+        align-items:stretch;
+        background: red;
+       align-content:stretch;
+       
+        }
+        div{background: rgb(11, 143, 184);
+        line-height: 450px;
+        font-size:30px;
+        padding:5px;
+        margin:10px;
+        }
+        /*.b{flex-grow :8;
+        }*/
+        .b{flex-basis:200px;
+            }
+        section{
+            background: rgb(70, 240, 54);
+            display:flex;
+            line-height: 75px;
+        }
+        
+       
+
+
+        
+    </style>
+    <body>
+        <div class="a">
+            <div class="b">5</div>
+            <div style="order:2">3</div>
+            <div class="c"  style="align-self:flex-end">4</div>
+            <div class="c" style="order:1">2</div>
+            <div style="order:0">1</div>
+        </div>
+        <section>
+            <div>1</div>
+            <div style="align-self: flex-start">2</div>
+            <div>3</div>
+            <div>4</div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            class ctreation
+        </title>
+    </head>
+    <body>
+        <h1 id="d"></h1>
+    </body>
+    <script>
+    class bike
+    {
+        static howManyInstance = 0;
+
+        constructor(name)
+        {
+             bike.howManyInstance++;
+            this.model=name;
+        }
+        bike(m)
+        {
+            return m+" the best bike model "+this.model;
+        }
+        static my(x)
+        {
+            return "use understand static method "+this.model;
+        }
+        static getMyInstance(){
+            return bike.howManyInstance;
+        }
+    }
+    obj=new bike("hayabus \"suzuki\"");
+    objTest=new bike("hayabus \"suzuki\"");
+    objTestd=new bike("hayabus \"suzuki\"");
+
+    document.getElementById("d").innerHTML=bike.getMyInstance();
+    </script>
+</html>

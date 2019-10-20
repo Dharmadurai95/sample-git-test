@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            text node ,node value
+        </title>
+    </head>
+    <body>
+        <div id = "hai">
+                <p id="p1">this i the first paragraph</p>
+                <p id="p2"> this is the second paragraph</p>
+                <button onclick="re()">remove</button>
+        </div>
+    </body>
+    <script>
+        //document.getElementById("p1").innerHTML=
+        //document.getElementById("p2").childNodes[0].nodeValue;
+       // alert(document.documentElement.innerHTML);
+      var pq = document.createElement("p");
+      var tex= document.createTextNode("create new text");
+      pq.appendChild(tex);
+
+      var d = document.getElementById("hai");
+      var pr = document.getElementById("p2");
+      d.replaceChild(pq,pr);
+      //function re() { pq.remove() }
+    </script>
+</html>

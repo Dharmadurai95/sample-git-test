@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assentive an decentive</title>
+    </head>
+    <body>
+        <h1 id="a"></h1>
+        <h1 id="b"> max value</h1>
+        <h1 id="c"> max value</h1>
+        <button type="button"  onclick="fun1()">given input</button>
+        <button type="button" id="v" onclick="fun()">assentive</button>
+        <button type="button"  onclick="fun2()">decentove</button>
+        <button type="button"  onclick="fun3()">random value</button>
+        
+        </body>
+    <script>
+        a=[2,55,103,1,85,34];
+        function fun(){
+            a.sort(function(a,b){return a-b});
+            document.getElementById("a").innerHTML=a;
+
+        }
+        
+        a=[2,55,103,1,85,34];
+        function fun1(){
+            //a.sort(function(a,b){return a-b});
+            document.getElementById("a").innerHTML=a;
+        }
+        a=[2,55,103,1,85,34];
+        function fun2(){
+            a.sort(function(a,b){return b-a});
+            document.getElementById("a").innerHTML=a;
+        }
+        a=[2,55,103,1,85,34];
+        function fun3(){
+            a.sort(function(a,b){return 0.5-Math.random()});          
+              document.getElementById("a").innerHTML=a;
+        }
+        a=[2,55,103,1,85,34];
+        function fun4(max){
+            return Math.max.apply(null,max);       
+              
+        }
+        document.getElementById("c").innerHTML=fun4(a)+"the maximum value";
+        //
+        a=[2,55,103,1,85,34];
+        function fun5(min){
+            return Math.min.apply(null,min);       
+              
+        }
+        document.getElementById("b").innerHTML=fun5(a)+"the minimum value";
+       
+
+
+    </script>
+</html>

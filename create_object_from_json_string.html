@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            create object from json string
+        </title>
+    </head>
+    <body>
+        <h2>CRATE OBJECT FOM JSON STRING</h2>
+        <p id= "demo"></p>
+    </body>
+    <script>
+        var txt = {name:"dharma",age:38,cty:"trichy"};
+        var obj = JSON.stringify(txt);
+        document.getElementById("demo").innerHTML = obj.name;
+    </script>
+</html>
