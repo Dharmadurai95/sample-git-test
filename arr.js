@@ -1,6 +1,6 @@
 var a=[12];
 var b=a.length
-
+//sathishs
    function fun(b){
        
         return b
